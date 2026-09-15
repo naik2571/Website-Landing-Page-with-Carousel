@@ -1,0 +1,73 @@
+<?php session_start(); ?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thread-Lancer - Collections</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+
+<?php include 'header.php'?>
+<nav>
+    <ul>
+        <li><a href="index.html">Home</a></li> <!-- Active class added here -->
+        <li><a href="about.html">About Us</a></li>
+        <li>
+            <a href="art.html">Art Categories</a>
+            <ul>
+                <li><a href="traditional.html">Traditional Zari</a></li>
+                <li><a href="modern.html">Modern Zari</a></li>
+                <li><a href="custom.html">Custom Designs</a></li>
+                <li><a href="gallery.html">Galleries</a></li>
+            </ul>
+        </li>
+        <li class="active">
+            <a href="collection.html">Collections</a>
+            <ul>
+                <li><a href="indian.html">Indian</a></li>
+                <li><a href="asian.html">Asian</a></li>
+                <li><a href="pakistani.html">Pakistani</a></li>
+                <li><a href="other.html">Others</a></li>
+            </ul>
+        </li>
+        <li><a href="contact.html">Contact Us</a></li>
+    </ul>
+</nav>
+<main>
+    <h1 style="text-align: center;">Explore Our Collections</h1>
+    <div class="gallery">
+        <div class="gallery-category">
+            <a href="indian.html">
+                <img src="morning paint.png" alt="Indian Collection">
+                <h2>Indian</h2>
+            </a>
+        </div>
+        <div class="gallery-category">
+            <a href="asian.html">
+                <img src="morning paint.png" alt="Asian Collection">
+                <h2>Asian</h2>
+            </a>
+        </div>
+        <div class="gallery-category">
+            <a href="pakistani.html">
+                <img src="morning paint.png" alt="Pakistani Collection">
+                <h2>Pakistani</h2>
+            </a>
+        </div>
+        <div class="gallery-category">    
+            <a href="other.html">
+                <img src="morning paint.png" alt="London Collection">
+                <h2>Others</h2>
+            </a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    &copy; 2024 Thread-Lancer. All rights reserved.
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Thread-Lancer - Designer Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="dashboard-body">
+
+    <header class="dashboard-header">
+        <div class="logo-area" style="display: flex; align-items: center;">
+            <a href="index.php" style="display: flex; align-items: center; text-decoration: none; color: gold; gap: 15px;">
+                <img src="logos.png" alt="Thread-Lancer Logo" class="dash-logo">
+                <span style="font-family: 'Bell MT', serif; font-weight: bold; font-size: 26px;">Thread-Lancer</span>
+            </a>
+            
+            <span style="color: #666; font-size: 18px; margin-left: 15px; border-left: 2px solid #333; padding-left: 15px;">
+                Designer Portal
+            </span>
+        </div>
+
+        <div class="user-profile-menu">
+            <span id="welcome-text">Welcome, Designer</span>
+            <button class="logout-btn" onclick="logout()">Logout</button>
+        </div>
+    </header>
+    <div class="dashboard-wrapper">
+        <aside class="sidebar">
+            <ul class="sidebar-menu">
+                <li class="active-tab" onclick="switchTab('overview')">Overview</li>
+                <li onclick="switchTab('my-bids')">My Bids</li>
+                <li onclick="switchTab('upload-art')">Upload Portfolio</li>
+                <li onclick="switchTab('earnings')">Earnings</li>
+                <li onclick="switchTab('settings')">Settings</li>
+            </ul>
+        </aside>
+
+        <main class="dashboard-content">
+            
+            <div id="tab-overview" class="dash-section active-section">
+                <h2>Dashboard Overview</h2>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <h3>Active Bids</h3>
+                        <p class="stat-number">3</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Projects Won</h3>
+                        <p class="stat-number">12</p>
+                    </div>
+                    <div class="stat-card">
+                        <h3>Total Earnings</h3>
+                        <p class="stat-number">₹85,000</p>
+                    </div>
+                </div>
+
+                <h3 class="section-title">Recent Activity</h3>
+                <div class="activity-list">
+                    <p>✔️ Your bid of ₹15,000 on "Golden Wedding Suit" was submitted.</p>
+                    <p>🏆 You won the project "Silver Zari Border Design".</p>
+                    <p>📷 Your portfolio item "Peacock Motif" was approved.</p>
+                </div>
+            </div>
+
+            <div id="tab-my-bids" class="dash-section" style="display: none;">
+                <h2>Manage Your Bids</h2>
+                <p>Track the status of your submitted proposals here.</p>
+                </div>
+
+            <div id="tab-upload-art" class="dash-section" style="display: none;">
+                <h2>Upload to Portfolio</h2>
+                <div class="upload-box">
+                    <p>Drag and drop your Zari art images here, or click to browse.</p>
+                    <button class="buy-btn" style="width: auto; margin-top: 15px;">Select Files</button>
+                </div>
+            </div>
+            <div id="tab-earnings" class="dash-section" style="display: none;">
+                <h2>Earned through all projects</h2>
+                <h1>98000$</h1>
+                </div>
+
+            <div id="tab-settings" class="dash-section" style="display: none;">
+                <h2>Earned through all projects</h2>
+                <h1>98000$</h1>
+                </div>
+
+        </main>
+    </div>
+
+<script src="script.js"></script>
+</body>
+</html>
